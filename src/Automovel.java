@@ -1,42 +1,42 @@
 public abstract class Automovel {
-    private int nome;
-    private int modelo;
-    private int placa;
+    private String marca;
+    private String  modelo;
+    private String  placa;
 
-    public Automovel(int nome, int modelo, int placa) {
-        this.nome = nome;
+    public Automovel(String nome, String modelo, String placa) {
+        this.marca = nome;
         this.modelo = modelo;
         this.placa = placa;
     }
 
-    public int getNome() {
-        return nome;
+    public String getNome() {
+        return marca;
     }
 
-    public void setNome(int nome) {
-        this.nome = nome;
+    public void setNome(String nome) {
+        this.marca = nome;
     }
 
-    public int getModelo() {
+    public String getModelo() {
         return modelo;
     }
 
-    public void setModelo(int modelo) {
+    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
-    public int getPlaca() {
+    public String getPlaca() {
         return placa;
     }
 
-    public void setPlaca(int placa) {
+    public void setPlaca(String placa) {
         this.placa = placa;
     }
 
     @Override
     public String toString() {
         return "Automovel{" +
-                "nome=" + nome +
+                "marca=" + marca +
                 ", modelo=" + modelo +
                 ", placa=" + placa +
                 '}';

@@ -1,12 +1,22 @@
 public class Carro extends Automovel implements Transportavel{
+    private int lugar;
 
-    private boolean transportavel;
-    public Carro(int nome, int modelo, int placa) {
-        super(nome, modelo, placa);
+    public int getLugar() {
+        return lugar;
     }
 
+    public void setLugar(int lugar) {
+        this.lugar = lugar;
+    }
+
+    public Carro(String marca, String modelo, String placa, int lugar) {
+        super(marca, modelo, placa);
+        this.lugar = lugar;
+    }
+
+
     @Override
-    public boolean ehTransportavel() {
-        return transportavel;
+    public void tantosLugares() {
+        System.out.println("O Carro possui " + getLugar() + " lugar(es)");
     }
 }
