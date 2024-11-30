@@ -1,4 +1,6 @@
-public abstract class Automovel {
+import Interface.Locomocao;
+
+public abstract class Automovel implements Locomocao {
     private String marca;
     private String  modelo;
     private String  placa;

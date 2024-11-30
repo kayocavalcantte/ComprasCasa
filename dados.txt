@@ -1,7 +1,0 @@
-Moradores:
-Pessoa{nome='kayo', idade='21'}
-
-Produtos:
-
-Carros:
-Automovel{marca=fiat, modelo=mobi, placa=png2345}

@@ -1,4 +1,6 @@
-public class Carro extends Automovel implements Transportavel{
+import Interface.Transportavel;
+
+public class Carro extends Automovel implements Transportavel {
     private int lugar;
 
     public int getLugar() {
@@ -16,7 +18,12 @@ public class Carro extends Automovel implements Transportavel{
 
 
     @Override
-    public void tantosLugares() {
-        System.out.println("O Carro possui " + getLugar() + " lugar(es)");
+    public String tantosLugares() {
+        return "O Carro possui " + getLugar() + " lugar(es)";
+    }
+
+    @Override
+    public void andar() {
+
     }
 }
